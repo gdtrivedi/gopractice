@@ -27,6 +27,8 @@ func main() {
 	fmt.Println()
 	fmt.Printf("Equality (ignoring field): %t", cmp.Equal(settings1, settings2, cmpopts.IgnoreFields(Wifi{}, "Country")))
 	fmt.Println()
+	fmt.Printf("Diff: %s", cmp.Diff(settings1,settings2))
+	fmt.Println()
 	fmt.Println(".....End.....")
 }
 
