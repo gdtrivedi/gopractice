@@ -1,0 +1,63 @@
+{
+    "_id": "settings", 
+    "bearer-priority": [
+        "bear-tm", 
+        "bear-gogo"
+    ], 
+    "version": {
+        "configSchema": "81",
+        "lruSoftware": "4.2.0.52317"
+    }, 
+    "wifi": {
+        "country": "USA",
+        "geolocation": true,
+        "networks": [
+            {
+                "_id": 0, 
+                "bearers": [
+                    "bear-tm", 
+                    "bear-gogo"
+                ], 
+                "hidden": false, 
+                "password": "", 
+                "radio": 1, 
+                "ssid": "Dev-563617", 
+                "vvip": false
+            }, 
+            {
+                "_id": 1, 
+                "bearers": [
+                    "bear-tm", 
+                    "bear-gogo"
+                ], 
+                "hidden": false, 
+                "password": "", 
+                "radio": 2, 
+                "ssid": "Dev-563617", 
+                "vvip": false
+            }
+        ], 
+        "radios": [
+            {
+                "_id": 0, 
+                "band": "5.0", 
+                "cabin": true, 
+                "channel": 0, 
+                "cloud": false, 
+                "name": "5.0GHz", 
+                "radio": 1, 
+                "txpower": "auto"
+            }, 
+            {
+                "_id": 1, 
+                "band": "2.4", 
+                "cabin": true, 
+                "channel": 0, 
+                "cloud": true, 
+                "name": "2.4GHz", 
+                "radio": 2, 
+                "txpower": "auto"
+            }
+        ]
+    }
+}
