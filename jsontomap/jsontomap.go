@@ -45,4 +45,6 @@ func main() {
 	dumpMap("", jsonMap)
 	fmt.Println(jsonMap["string"])
 	fmt.Println(jsonMap["object"].(map[string]interface{})["a"])
+	arr := jsonMap["array"].([]interface{})
+	fmt.Println(arr[0])
 }
