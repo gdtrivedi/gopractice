@@ -17,4 +17,7 @@ func main() {
 		fmt.Println("Equal")
 	}
 
+	// trim
+	fmt.Println(len(strings.Trim("    Gautam   ", " ")))
+
 }
