@@ -1,0 +1,139 @@
+{
+  "data" : [
+    {
+      "tid":"3411000300416",
+      "payload": {
+        "Andrews-iPhone.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "false",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:38:59",
+            "hostname": "Andrews-iPhone.gogo.aero",
+            "ip": "172.20.10.101",
+            "mac": "90:e1:7b:b1:87:be",
+            "ssid": "N87BCwifi5.0GHz"
+          }
+        ],
+        "Capt-Dave.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan1",
+            "expires": "2020/05/08 20:39:12",
+            "hostname": "Capt-Dave.gogo.aero",
+            "ip": "172.20.10.107",
+            "mac": "f4:06:16:52:b6:3e",
+            "ssid": "N87BCwifi2.4GHz"
+          }
+        ],
+        "DavidHenkesiPad.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:38:31",
+            "hostname": "DavidHenkesiPad.gogo.aero",
+            "ip": "172.20.10.103",
+            "mac": "5c:ad:cf:ac:1e:f7",
+            "ssid": "N87BCwifi5.0GHz"
+          }
+        ],
+        "Sarahs-iPhone.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:38:52",
+            "hostname": "Sarahs-iPhone.gogo.aero",
+            "ip": "172.20.10.104",
+            "mac": "44:4a:db:0f:73:b1",
+            "ssid": "N87BCwifi5.0GHz"
+          }
+        ],
+        "iPad-145.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:38:43",
+            "hostname": "iPad-145.gogo.aero",
+            "ip": "172.20.10.102",
+            "mac": "5c:97:f3:dd:92:66",
+            "ssid": "N87BCwifi5.0GHz"
+          }
+        ]
+      },
+      "timestamp": "1588970301"
+    },
+    {
+      "tid": "3411000300586",
+      "payload": {
+        "172.20.10.105.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "expires": "2020/05/08 20:39:12",
+            "hostname": "172.20.10.105.gogo.aero",
+            "ip": "172.20.10.105",
+            "mac": "00:00:bc:9c:64:f3"
+          }
+        ],
+        "172.20.10.106.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "expires": "2020/05/08 20:39:45",
+            "hostname": "172.20.10.106.gogo.aero",
+            "ip": "172.20.10.106",
+            "mac": "00:00:bc:9c:a7:47"
+          }
+        ],
+        "Cades-phone.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:39:16",
+            "hostname": "Cades-phone.gogo.aero",
+            "ip": "172.20.10.108",
+            "mac": "44:4a:db:12:d2:c7",
+            "ssid": "N512KS WiFi 5.0 Ghz"
+          }
+        ],
+        "M-Davis-Iphone.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan0",
+            "expires": "2020/05/08 20:38:46",
+            "hostname": "M-Davis-Iphone.gogo.aero",
+            "ip": "172.20.10.112",
+            "mac": "cc:d2:81:49:e7:70",
+            "ssid": "N512KS WiFi 5.0 Ghz"
+          }
+        ],
+        "Matthews-iPad-3.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "connect": "true",
+            "device": "wlan1",
+            "expires": "2020/05/08 20:38:51",
+            "hostname": "Matthews-iPad-3.gogo.aero",
+            "ip": "172.20.10.111",
+            "mac": "9c:e6:5e:dd:47:db",
+            "ssid": "N512KS WiFi 2.4 Ghz"
+          }
+        ],
+        "OEM-8LVT3XI6CUE.gogo.aero": [
+          {
+            "client": "int-cabin",
+            "expires": "2020/05/08 20:39:39",
+            "hostname": "OEM-8LVT3XI6CUE.gogo.aero",
+            "ip": "172.20.10.101",
+            "mac": "06:0a:50:cb:18:9b"
+          }
+        ]
+      },
+      "timestamp": "1588970301"
+    }
+  ]
+}
