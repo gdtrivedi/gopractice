@@ -6,7 +6,9 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"strconv"
 	"strings"
+	"time"
 )
 
 func main() {
@@ -41,9 +43,16 @@ func main() {
 			for _, element := range payloadEle.([]interface{}) {
 
 				dhcp := DHCPPayload{
-					Timestamp: msg.Payload.Timestamp,
 					Tid:       ss[2],
 				}
+
+				timestampInt64, err := strconv.ParseInt(msg.Payload.Timestamp, 10, 64)
+				if err != nil {
+					continue
+				}
+				dhcp.EventTimestamp = timestampInt64
+
+				dhcp.InsertTimestamp = time.Now().Unix()
 
 				if val, ok := element.(map[string]interface{})["client"]; ok {
 					dhcp.Client = val.(string)

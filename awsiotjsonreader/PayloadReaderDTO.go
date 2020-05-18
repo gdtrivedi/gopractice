@@ -20,7 +20,8 @@ type Payload struct {
 }
 
 type DHCPPayload struct {
-	Timestamp string `json:"timestamp,omitempty"`
+	EventTimestamp int64 `json:"event_timestamp"`
+	InsertTimestamp int64 `json:"insert_timestamp"`
 	Tid string `json:"tid,omitempty"`
 	Client    string   `json:"client,omitempty"`
 	Connect   string	`json:"connect,omitempty"`

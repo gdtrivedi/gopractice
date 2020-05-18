@@ -1,0 +1,2 @@
+{"event_timestamp":1589830536,"insert_timestamp":1589841198,"tid":"3411000200301","client":"int-cabin","connect":"true","device":"wlan0","expires":"2020/05/18 19:37:00","hostname":"PUTZ-iPad.gogo.aero","ip":"192.168.51.138","mac":"88:ae:07:10:3e:75","ssid":"FlexjetWiFi"}
+{"event_timestamp":1589830536,"insert_timestamp":1589841198,"tid":"3411000200301","client":"int-cabin","connect":"true","device":"wlan1","expires":"2020/05/18 19:37:16","hostname":"iPhone.gogo.aero","ip":"192.168.51.119","mac":"9c:e6:5e:6e:2b:7d","ssid":"FlexjetWiFi"}
