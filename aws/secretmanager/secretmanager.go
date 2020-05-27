@@ -67,32 +67,6 @@ func getSecret() {
 		return
 	}
 
-	// Example JSON from AWS Secrets Manager.
-	/*
-	jsonStr := `
-{
-  "BSG_INSTRUCTION_API": {
-    "username": "apiuser@bsginstruction.stage.gogoair.com",
-    "password": "password1"
-  },
-  "BSG_COFIG_API": {
-    "username": "configapi@gogiair.com",
-    "password": "password2"
-  },
-  "BSG_AIRCRAFT_API": {
-    "username": "aircraftapi@gogiair.com",
-    "password": "password3"
-  },
-  "BSG_SF_API": {
-    "username": "aircraftapi@gogiair.com",
-    "password": "password3",
-    "secretId":"secretId_value",
-    "secret":"secret_value"
-  }
-}
-`
-	 */
-
 	// Decrypts secret using the associated KMS CMK.
 	// Depending on whether the secret is a string or binary, one of these fields will be populated.
 	var secretString, decodedBinarySecret string
