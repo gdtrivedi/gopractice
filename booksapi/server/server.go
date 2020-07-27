@@ -1,21 +1,18 @@
-package main
+package server
 
 import (
 	"fmt"
+	"github.com/gdtrivedi/gopractice/booksapi"
+	"github.com/gdtrivedi/gopractice/booksapi/dto"
+	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-
-	"github.com/gdtrivedi/gopractice/booksapi"
-
-	"github.com/gdtrivedi/gopractice/booksapi/dto"
-
-	"github.com/gorilla/mux"
 )
 
 //slice books
 var books []dto.Book
 
-func main() {
+func NewMuxServer() {
 	// Init router
 	r := mux.NewRouter()
 
