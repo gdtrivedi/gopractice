@@ -1,11 +1,11 @@
-package main
+package strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func StringCompare() {
 	fmt.Println(strings.Compare("a", "b"))
 	fmt.Println(strings.Compare("a", "A"))
 	fmt.Println(strings.Compare("b", "a"))

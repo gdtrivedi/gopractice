@@ -1,11 +1,11 @@
-package main
+package strings
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func TrimString() {
 	name := "  Trim Test  "
 	strings.TrimSpace(name)
 	fmt.Println(name)
