@@ -63,6 +63,24 @@ func split1(strings StrArr, chunkSize int) str2DArr {
 	return chunks
 }
 
+// Split splits given list of string and chunk size, this function splits the string array into multi dimension array of fixed lim size. Returns empty [] if input strings [] is empty.
+func Split(strings []string, chunkSize int) [][]string {
+	var chunk []string
+
+	chunks := make([][]string, 0, len(strings)/chunkSize+1)
+
+	for len(strings) >= chunkSize {
+		chunk, strings = strings[:chunkSize], strings[chunkSize:]
+		chunks = append(chunks, chunk)
+	}
+
+	if len(strings) > 0 {
+		chunks = append(chunks, strings)
+	}
+
+	return chunks
+}
+
 // Removes elements from string array/slice which matches to selector string and returns result array/slice.
 // This functon also accepts a bool parameter to trim the array/slice element before matching.
 func RemoveElements(inputStrArr StrArr, selector string, trimElementBeforeMatch bool) StrArr {
