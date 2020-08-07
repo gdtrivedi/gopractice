@@ -5,6 +5,7 @@ import (
 	booksapiserver "github.com/gdtrivedi/gopractice/booksapi/server"
 	"github.com/gdtrivedi/gopractice/forloop"
 	"github.com/gdtrivedi/gopractice/hubspotemail"
+	"github.com/gdtrivedi/gopractice/netpackage"
 	"github.com/gdtrivedi/gopractice/stringarray"
 	"github.com/gdtrivedi/gopractice/strings"
 )
@@ -14,7 +15,12 @@ func main() {
 	//pkg_forloop() //test of forloop package.
 	//pkg_booksapi() //test of booksapi package.
 	//pkg_hubspotemail() //test of hubspotemail package.
-	pkg_strings() // test of strings package.
+	//pkg_strings() // test of strings package.
+	pkg_net() //test of netpackage package
+}
+
+func pkg_net() {
+	netpackage.TestNetPackage()
 }
 
 func pkg_strings() {
