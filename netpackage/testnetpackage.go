@@ -6,7 +6,7 @@ import (
 )
 
 func TestNetPackage() {
-	host := "gautamtrivedi.wpengine.com"
+	host := "dsatest.wpengine.com"
 	fmt.Println(net.LookupHost(host))
 	fmt.Println(net.LookupAddr(host))
 	fmt.Println(net.LookupCNAME(host))
@@ -14,10 +14,10 @@ func TestNetPackage() {
 	fmt.Println(net.LookupNS(host))
 	fmt.Println(net.LookupMX(host))
 	/*
-	[52.216.143.75] <nil>
-	[] lookup gtrivedi.com: invalid address
-	gtrivedi.com. <nil>
-	[52.216.143.75] <nil>
+		[52.216.143.75] <nil>
+		[] lookup gtrivedi.com: invalid address
+		gtrivedi.com. <nil>
+		[52.216.143.75] <nil>
 
 	*/
 

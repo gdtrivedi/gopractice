@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/responseheaders"
+
 	"github.com/gdtrivedi/gopractice/jsonparsing"
 
 	booksapiserver "github.com/gdtrivedi/gopractice/booksapi/server"
@@ -20,8 +22,13 @@ func main() {
 	//pkg_hubspotemail() //test of hubspotemail package.
 	//pkg_strings() // test of strings package.
 	//pkg_net() //test of netpackage package
-	pkg_jsonparsing()
+	//pkg_jsonparsing()
+	pkg_responseheaders()
 }
+func pkg_responseheaders() {
+	responseheaders.GetResponseHeaders()
+}
+
 func pkg_jsonparsing() {
 	jsonparsing.UnmarshallTest()
 }
