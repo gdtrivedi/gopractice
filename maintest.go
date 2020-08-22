@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/switchcase"
+
 	"github.com/gdtrivedi/gopractice/responseheaders"
 
 	"github.com/gdtrivedi/gopractice/jsonparsing"
@@ -21,9 +23,13 @@ func main() {
 	//pkg_booksapi() //test of booksapi package.
 	//pkg_hubspotemail() //test of hubspotemail package.
 	//pkg_strings() // test of strings package.
-	//pkg_net() //test of netpackage package
+	pkg_net() //test of netpackage package
 	//pkg_jsonparsing()
-	pkg_responseheaders()
+	//pkg_responseheaders()
+	//pkg_switchcase()
+}
+func pkg_switchcase() {
+	switchcase.SwitchCaseTest()
 }
 func pkg_responseheaders() {
 	responseheaders.GetResponseHeaders()

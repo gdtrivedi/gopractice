@@ -6,7 +6,7 @@ import (
 )
 
 func TestNetPackage() {
-	host := "dsatest.wpengine.com"
+	host := "blog.gtrivedi.xyz"
 	fmt.Println(net.LookupHost(host))
 	fmt.Println(net.LookupAddr(host))
 	fmt.Println(net.LookupCNAME(host))
