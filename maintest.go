@@ -3,6 +3,10 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/gcp/firestore"
+
+	"github.com/gdtrivedi/gopractice/timestamp"
+
 	"github.com/gdtrivedi/gopractice/switchcase"
 
 	"github.com/gdtrivedi/gopractice/responseheaders"
@@ -23,11 +27,20 @@ func main() {
 	//pkg_booksapi() //test of booksapi package.
 	//pkg_hubspotemail() //test of hubspotemail package.
 	//pkg_strings() // test of strings package.
-	pkg_net() //test of netpackage package
+	//pkg_net() //test of netpackage package
 	//pkg_jsonparsing()
 	//pkg_responseheaders()
 	//pkg_switchcase()
+	//pkg_showtime()
+	pkg_gcp()
 }
+func pkg_gcp() {
+	firestore.PrintDocumentJSON("domain-mapper-service", "application")
+}
+func pkg_showtime() {
+	timestamp.ShowTime()
+}
+
 func pkg_switchcase() {
 	switchcase.SwitchCaseTest()
 }

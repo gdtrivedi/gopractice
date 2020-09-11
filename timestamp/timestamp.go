@@ -1,15 +1,17 @@
-package main
+package timestamp
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func ShowTime() {
 	currentTime := time.Now()
 	timestamp := currentTime.Unix()
-	timeInRFC3339Format :=currentTime.Format(time.RFC3339)
+	timeInRFC3339Format := currentTime.Format(time.RFC3339)
+	timeInStampMilliFormat := currentTime.Format(time.StampMilli)
 
-	fmt.Println("timestamp: %s", timestamp)
-	fmt.Println("timeInRFC3339Format: %s", timeInRFC3339Format)
+	fmt.Println("timestamp: ", timestamp)
+	fmt.Println("timeInRFC3339Format: ", timeInRFC3339Format)
+	fmt.Println("timeInStampMilliFormat: ", timeInStampMilliFormat)
 }
