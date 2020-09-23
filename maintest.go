@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/uuid"
+
 	"github.com/gdtrivedi/gopractice/gcp/firestore"
 
 	"github.com/gdtrivedi/gopractice/timestamp"
@@ -32,7 +34,11 @@ func main() {
 	//pkg_responseheaders()
 	//pkg_switchcase()
 	//pkg_showtime()
-	pkg_gcp()
+	//pkg_gcp()
+	pkg_uuid()
+}
+func pkg_uuid() {
+	uuid.UUIDTest()
 }
 func pkg_gcp() {
 	firestore.PrintDocumentJSON("domain-mapper-service", "application")
