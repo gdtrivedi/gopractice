@@ -3,6 +3,10 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/querystring"
+
+	"github.com/gdtrivedi/gopractice/jsontostruct"
+
 	"github.com/gdtrivedi/gopractice/uuid"
 
 	"github.com/gdtrivedi/gopractice/gcp/firestore"
@@ -35,7 +39,15 @@ func main() {
 	//pkg_switchcase()
 	//pkg_showtime()
 	//pkg_gcp()
-	pkg_uuid()
+	//pkg_uuid()
+	//pkg_jsontostruct()
+	pkg_querystring()
+}
+func pkg_querystring() {
+	querystring.QueryStringTest()
+}
+func pkg_jsontostruct() {
+	jsontostruct.InstallDomainsTest()
 }
 func pkg_uuid() {
 	uuid.UUIDTest()

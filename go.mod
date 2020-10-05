@@ -10,7 +10,9 @@ require (
 	github.com/datacratic/aws-sdk-go v0.0.0-20150806140452-ac2c89bbe2f6 // indirect
 	github.com/gdtrivedi/gomodules/hello v0.0.0-20200226173810-95a80e501188
 	github.com/gin-gonic/gin v1.6.3
+	github.com/golang/protobuf v1.4.2
 	github.com/google/go-cmp v0.5.1
+	github.com/google/go-querystring v1.0.0
 	github.com/google/uuid v1.1.2
 	github.com/gorilla/mux v1.7.4
 	github.com/h2non/filetype v1.0.12 // indirect
