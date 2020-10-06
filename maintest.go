@@ -28,7 +28,7 @@ import (
 )
 
 func main() {
-	//pkg_stringarray() //test of stringarray package.
+	pkg_stringarray() //test of stringarray package.
 	//pkg_forloop() //test of forloop package.
 	//pkg_booksapi() //test of booksapi package.
 	//pkg_hubspotemail() //test of hubspotemail package.
@@ -41,7 +41,7 @@ func main() {
 	//pkg_gcp()
 	//pkg_uuid()
 	//pkg_jsontostruct()
-	pkg_querystring()
+	//pkg_querystring()
 }
 func pkg_querystring() {
 	querystring.QueryStringTest()
@@ -118,6 +118,8 @@ func pkg_stringarray() {
 	elements = stringarray.Split(inputStrArr, 2)
 	fmt.Println("elements: ", elements)
 	// END: Split Test
+
+	stringarray.MakeStringArr()
 }
 
 func pkg_forloop() {

@@ -38,6 +38,7 @@ func QueryStringTest() {
 	if err != nil {
 		fmt.Println(err)
 	} else {
+		fmt.Println(u.String())
 		fmt.Println(u.RequestURI())
 	}
 }

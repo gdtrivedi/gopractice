@@ -1,6 +1,7 @@
 package stringarray
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -26,6 +27,22 @@ func stringArrayTests() {
 	//fmt.Println("len(elements[0]) : ", len(elements[0]))
 	//fmt.Println("len(elements[0][0]) : ", len(elements[0][0]))
 	// END: split1 test
+
+}
+
+func MakeStringArr() {
+	applicableInstalls := make([]string, 0)
+	fmt.Println(len(applicableInstalls))
+	applicableInstalls = append(append(applicableInstalls, "a"), "b")
+	fmt.Println(len(applicableInstalls))
+	fmt.Println(applicableInstalls)
+	fmt.Println(strings.Join(applicableInstalls[:], ", "))
+	for _, installName := range applicableInstalls {
+		if installName == "a" {
+			continue
+		}
+		fmt.Println("Install Name: ", installName)
+	}
 }
 
 // split given list of string and chunk size, this function splits the string array into multi dimension array of fixed lim size
