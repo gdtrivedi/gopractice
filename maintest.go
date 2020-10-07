@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/dmsclient"
+
 	"github.com/gdtrivedi/gopractice/querystring"
 
 	"github.com/gdtrivedi/gopractice/jsontostruct"
@@ -28,7 +30,7 @@ import (
 )
 
 func main() {
-	pkg_stringarray() //test of stringarray package.
+	//pkg_stringarray() //test of stringarray package.
 	//pkg_forloop() //test of forloop package.
 	//pkg_booksapi() //test of booksapi package.
 	//pkg_hubspotemail() //test of hubspotemail package.
@@ -42,6 +44,10 @@ func main() {
 	//pkg_uuid()
 	//pkg_jsontostruct()
 	//pkg_querystring()
+	pkg_dmsclient()
+}
+func pkg_dmsclient() {
+	dmsclient.DMSClientTest()
 }
 func pkg_querystring() {
 	querystring.QueryStringTest()
