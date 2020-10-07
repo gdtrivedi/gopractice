@@ -80,20 +80,20 @@ func (c *Client) UpdateInstallInfo(install *Install) (bool, error) {
 		return false, err
 	}
 
-	installJson, err := json.Marshal(install)
-	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println("installJson: ", string(installJson))
-	}
+	//installJson, err := json.Marshal(install)
+	//if err != nil {
+	//	fmt.Println(err)
+	//} else {
+	//	fmt.Println("installJson: ", string(installJson))
+	//}
 
 	b := new(bytes.Buffer)
 	if err := json.NewEncoder(b).Encode(install); err != nil {
 		return false, err
 	}
 	//req, _ := http.NewRequest(http.MethodPut, dmsURL.String(), b)
-	fmt.Println("dmsURL.String():", dmsURL.String())
-	req, _ := http.NewRequest(http.MethodPut, dmsURL.String(), bytes.NewBuffer(installJson))
+	//fmt.Println("dmsURL.String():", dmsURL.String())
+	req, _ := http.NewRequest(http.MethodPut, dmsURL.String(), b)
 	req.Header.Set("Content-Type", "application/json")
 	res, err := c.httpu.MakeRequest(c.addRequestHeaders(req))
 	if err != nil {
