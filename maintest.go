@@ -3,6 +3,22 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/modeltest"
+
+	"github.com/gdtrivedi/gopractice/strconv"
+
+	"github.com/gdtrivedi/gopractice/split"
+
+	"github.com/gdtrivedi/gopractice/cflogpush/bqwrite"
+
+	"github.com/gdtrivedi/gopractice/base64"
+
+	"github.com/gdtrivedi/gopractice/waitgroup"
+
+	"github.com/gdtrivedi/gopractice/entitlementsvc/client"
+
+	"github.com/gdtrivedi/gopractice/errorf"
+
 	"github.com/gdtrivedi/gopractice/dmsclient"
 
 	"github.com/gdtrivedi/gopractice/querystring"
@@ -44,7 +60,39 @@ func main() {
 	//pkg_uuid()
 	//pkg_jsontostruct()
 	//pkg_querystring()
-	pkg_dmsclient()
+	//pkg_dmsclient()
+	//pkg_entitlementclient()
+	//pkg_errorf()
+	//pkg_waitgroup()
+	//pkg_base64()
+	//pkg_bqwrite()
+	//pkg_split()
+	//pkg_strconv()
+	pkg_modeltest()
+}
+func pkg_modeltest() {
+	modeltest.ModelTest()
+}
+func pkg_strconv() {
+	strconv.ParseFloatTest()
+}
+func pkg_split() {
+	split.SplitTest()
+}
+func pkg_bqwrite() {
+	bqwrite.BQWriteTest()
+}
+func pkg_base64() {
+	base64.Base64Test()
+}
+func pkg_waitgroup() {
+	waitgroup.WaitgroupSimpleTest()
+}
+func pkg_entitlementclient() {
+	client.EntitlementClientTest()
+}
+func pkg_errorf() {
+	errorf.ErrorfTest()
 }
 func pkg_dmsclient() {
 	dmsclient.DMSClientTest()

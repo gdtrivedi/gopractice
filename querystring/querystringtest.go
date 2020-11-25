@@ -52,6 +52,7 @@ func entitlementsURL(q *EntitlementsQuery) (url.URL, error) {
 		return u, errors.Wrap(err, "invalid params")
 	}
 
+	v.Set("dummyKey", "dummyValue")
 	baseURL, err := url.Parse("https://entitlements-staging.wpesvc.net")
 
 	if err != nil {
