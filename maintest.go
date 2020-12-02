@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/cfclient/gi"
+
 	"github.com/gdtrivedi/gopractice/modeltest"
 
 	"github.com/gdtrivedi/gopractice/strconv"
@@ -68,7 +70,11 @@ func main() {
 	//pkg_bqwrite()
 	//pkg_split()
 	//pkg_strconv()
-	pkg_modeltest()
+	//pkg_modeltest()
+	pkg_gicftest()
+}
+func pkg_gicftest() {
+	gi.GICFTest()
 }
 func pkg_modeltest() {
 	modeltest.ModelTest()
