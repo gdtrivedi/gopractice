@@ -14,4 +14,9 @@ func ShowTime() {
 	fmt.Println("timestamp: ", timestamp)
 	fmt.Println("timeInRFC3339Format: ", timeInRFC3339Format)
 	fmt.Println("timeInStampMilliFormat: ", timeInStampMilliFormat)
+
+	time.Sleep(2 * time.Second)
+
+	latency := time.Since(currentTime)
+	fmt.Println("latency: ", latency)
 }
