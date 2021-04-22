@@ -33,10 +33,12 @@ type Offering struct {
 }
 
 func BQWriteTest() {
-	transformDomainName("webmail.58ih8jhbt6ac.wpeproxy.com")
-	transformDomainName("58ih8jhbt6ac.wpeproxy.com")
-	transformDomainName("58ih8jhbt6ac.wpeproxy.com:8080")
-	transformDomainName("wpeproxy.com")
+	//transformDomainName("webmail.58ih8jhbt6ac.wpeproxy.com")
+	//transformDomainName("58ih8jhbt6ac.wpeproxy.com")
+	//transformDomainName("58ih8jhbt6ac.wpeproxy.com:8080")
+	//transformDomainName("part1.part2.58ih8jhbt6ac.wpeproxy.com:8080")
+	//transformDomainName("wpeproxy.com")
+	transformDomainName("wpeproxy")
 }
 
 func transformDomainName(d string) {
@@ -45,20 +47,41 @@ func transformDomainName(d string) {
 	formatDomain := strings.Split(d, ":")
 	match, _ := regexp.MatchString("wpeproxy", formatDomain[0])
 	if match {
-		secureSubDomain := strings.Split(formatDomain[0], ".")
+		//secureSubDomain := strings.Split(formatDomain[0], ".")
+		secureSubDomain := extractSecureSubDomain(formatDomain[0])
 		// Check if secureSubDomain is available in cache
 		//domainName := "mytestdomainname"
 		isPresent := false
 		if !isPresent {
 			// remove this logic once validated
-			if strings.EqualFold(secureSubDomain[0], "wpeproxy") {
+			if strings.EqualFold(secureSubDomain, "wpeproxy") {
 				domainName = "mytestdomainname"
 			} else {
-				domainName = secureSubDomain[0]
+				domainName = secureSubDomain
 			}
 		}
 	} else {
 		domainName = formatDomain[0]
 	}
 	fmt.Println("domainName: ", domainName)
+}
+
+func extractSecureSubDomain(domain string) string {
+	var secureSubdomain string
+	ssd := strings.Split(domain, ".")
+
+	switch {
+	case len(ssd) == 1:
+		secureSubdomain = ssd[0]
+	case len(ssd) == 2 && strings.EqualFold(ssd[len(ssd)-2], "wpeproxy"):
+		// To address for cases wpeproxy.com
+		secureSubdomain = domain
+	case len(ssd) >= 3 && strings.EqualFold(ssd[len(ssd)-2], "wpeproxy"):
+		// To address for cases securesubdomain.wpeproxy.com or any.securesubdomain.wpeproxy.com
+		secureSubdomain = ssd[len(ssd)-3]
+	default:
+		secureSubdomain = ssd[0]
+	}
+
+	return secureSubdomain
 }

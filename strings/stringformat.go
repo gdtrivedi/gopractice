@@ -10,4 +10,7 @@ func FormatString() {
 	email := "email@example.com"
 	url := fmt.Sprintf("%s/automation/v2/workflows/%d/enrollments/contacts/%s", baseUrl, workflowId, email)
 	fmt.Println("URL: ", url)
+	install := "install"
+	originSvrDomain := "originSvrDomain"
+	fmt.Println(fmt.Sprintf("%s.%s", install, originSvrDomain))
 }

@@ -3,6 +3,20 @@ package main
 import (
 	"fmt"
 
+	"github.com/gdtrivedi/gopractice/fileutil"
+
+	"github.com/gdtrivedi/gopractice/jsontomap"
+
+	"github.com/gdtrivedi/gopractice/uploadfiles"
+
+	"github.com/gdtrivedi/gopractice/certificateparse"
+
+	"github.com/gdtrivedi/gopractice/structtojson"
+
+	"github.com/gdtrivedi/gopractice/maptest"
+
+	"github.com/gdtrivedi/gopractice/array"
+
 	"github.com/gdtrivedi/gopractice/cfclient/gi"
 
 	"github.com/gdtrivedi/gopractice/modeltest"
@@ -71,7 +85,36 @@ func main() {
 	//pkg_split()
 	//pkg_strconv()
 	//pkg_modeltest()
-	pkg_gicftest()
+	//pkg_gicftest()
+	//pkg_structtojson()
+	//pkg_arraytest()
+	//pkg_map()
+	pkg_certparse()
+	//pkg_uploadfiletest()
+	//pkg_jsontomap()
+	//pkg_fileutil()
+}
+func pkg_fileutil() {
+	fileutil.WriteStringToFile()
+}
+func pkg_jsontomap() {
+	jsontomap.JsontoMapTest()
+}
+func pkg_uploadfiletest() {
+	uploadfiles.UploadFilesTest()
+}
+func pkg_certparse() {
+	certificateparse.ParseCert()
+}
+func pkg_map() {
+	maptest.MapTest()
+}
+func pkg_arraytest() {
+	array.ArrayTest()
+}
+func pkg_structtojson() {
+	//structtojson.TestStructToJson()
+	structtojson.TestDNSRecordSpecStructToJson()
 }
 func pkg_gicftest() {
 	gi.GICFTest()
@@ -116,7 +159,8 @@ func pkg_gcp() {
 	firestore.PrintDocumentJSON("domain-mapper-service", "application")
 }
 func pkg_showtime() {
-	timestamp.ShowTime()
+	//timestamp.ShowTime()
+	timestamp.TimeInitTest()
 }
 
 func pkg_switchcase() {

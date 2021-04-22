@@ -11,6 +11,7 @@ func SplitTest() {
 	fmt.Println("SSD: ", getSSD(strings.Split("32sdi34sf.wpeproxy.com", ".")))
 	fmt.Println("SSD: ", getSSD(strings.Split("32sdi34sf.wpeproxy.co.uk", ".")))
 	fmt.Println("SSD: ", getSSD(strings.Split("abc.32sdi34sf.wpeproxy.co.uk", ".")))
+	urlParts(strings.Split("https://dms-staging.wpengine.io/dms/v1/domains/www.raol.eu", "/"))
 }
 
 func getSSD(secureSubDomain []string) string {
@@ -20,4 +21,8 @@ func getSSD(secureSubDomain []string) string {
 		}
 	}
 	return ""
+}
+
+func urlParts(urlParts []string) {
+	fmt.Println(urlParts[len(urlParts)-1])
 }
